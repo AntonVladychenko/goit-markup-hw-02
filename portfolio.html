@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalaize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="./index.html"> <span>Web</span>Studio</a>
+        <a href="./index.html"> <span>Web</span>Studio</a> 
         <ul>
           <li><a href="./index.html" target="blank">Студия</a></li>
           <li><a href="./portfolio.html" target="blank">Портфолио</a></li>
@@ -26,13 +29,22 @@
       <!--секция потфолио-->
       <section>
         <h1 hidden>Портфолио</h1>
-        <ul>
+        <!-- <ul> 
           <li>Все</li>
           <li>Веб-сайты</li>
           <li>Приложения</li>
           <li>Дизайн</li>
           <li>Маркетинг</li>
-        </ul>
+        </ul> -->
+        <div>
+        <span><input tabindex="1" checked type="radio" name="portfolio" value="all">Все</span>
+        <span><input tabindex="1" type="radio" name="portfolio" value="websites">Веб-сайты</span>
+        <span><input tabindex="1" type="radio" name="portfolio" value="applications">Приложения</span>
+        <span><input tabindex="1" type="radio" name="portfolio" value="design">Дизайн</span>
+        <span><input tabindex="1" type="radio" name="portfolio" value="marketing">Маркетинг</span>
+        </div>
+
+
         <!--картинка с текстом-->
         <ul>
           <li>
