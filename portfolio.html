@@ -4,72 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalaize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
       <nav class="navigation">
-        <a class="link-logo" href="./index.html"> <span>Web</span>Studio</a>
+        <a class="link-logo" lang="en" href="./index.html">
+          <span>Web</span> Studio</a
+        >
         <ul class="navigation-list">
           <li class="navigation-list-item">
-            <a class="navigation-list-link" href="./index.html" target="blank">Студия</a>
+            <a class="navigation-list-link" href="./index.html" target="blank"
+              >Студия</a
+            >
           </li>
           <li class="navigation-list-item">
-            <a class="navigation-list-link" href="./portfolio.html" target="blank">Портфолио</a>
+            <a
+              class="navigation-list-link"
+              href="./portfolio.html"
+              target="blank"
+              >Портфолио</a
+            >
           </li>
           <li class="navigation-list-item">
             <a class="navigation-list-link" href="#" target="blank">Контакты</a>
           </li>
         </ul>
       </nav>
-    
-      <ul class="navigation-contacts-list">
-        <li class="navigation-contacts-item">
-          <a class="navigation-link-tel" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+      <ul class="adress-contacts-list">
+        <li class="adress-contacts-item">
+          <a class="adress-link-mail-tel" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
-        <li class="navigation-contacts-item">
-          <a class="navigation-link-mail" href="tel:+380961111111">+38 096 111 11 11</a>
+        <li class="adress-contacts-item">
+          <a class="adress-link-mail-tel" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </li>
       </ul>
     </header>
     <main>
       <!--секция потфолио-->
-      <section>
-        <h1 hidden>Портфолио</h1>
-        <!-- <ul> 
-          <li>Все</li>
-          <li>Веб-сайты</li>
-          <li>Приложения</li>
-          <li>Дизайн</li>
-          <li>Маркетинг</li>
-        </ul> -->
-        <div>
+      <section class="portfolio-section">
+        <h1 class="portfolio-title" hidden>Портфолио</h1>
+        <ul class="portfolio-list">
+          <li class="">Все</li>
+          <li class="">Веб-сайты</li>
+          <li class="">Приложения</li>
+          <li class="">Дизайн</li>
+          <li class="">Маркетинг</li>
+        </ul>
+        <!-- <div>
         <span><input tabindex="1" checked type="radio" name="portfolio" value="all">Все</span>
         <span><input tabindex="1" type="radio" name="portfolio" value="websites">Веб-сайты</span>
         <span><input tabindex="1" type="radio" name="portfolio" value="applications">Приложения</span>
         <span><input tabindex="1" type="radio" name="portfolio" value="design">Дизайн</span>
         <span><input tabindex="1" type="radio" name="portfolio" value="marketing">Маркетинг</span>
-        </div>
-
+        </div> -->
 
         <!--картинка с текстом-->
-        <ul>
-          <li>
-            <a href="#" target="blank">
+        <ul class="examples-list">
+          <li class="examples-list-item">
+            <a class="examples-image" href="#" target="blank">
               <!-- <img src="" alt="" /> -->
-              <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-              шпионажа и атак на защищённые сервера конкурентов.</p>
-              <h2>Технокряк</h2>
-              <p>Веб-сайт</p>
+              <p class="techochryak-text">
+                Технокряк это современная площадка распространения коронавируса.
+                Компании используют эту платформу для цифрового шпионажа и атак
+                на защищённые сервера конкурентов.
+              </p>
+              <h2 class="examples-title">Технокряк</h2>
+              <p class="directions-text">Веб-сайт</p>
             </a>
           </li>
 
           <!--картинка баскетбол-->
-          <li>
-            <a href="#" target="blank">
+          <li class="examples-list-item">
+            <a class="examples-image" href="#" target="blank">
               <img
                 lang="en"
                 src="./img/portfolio/neworlean-goldenstar.jpg"
@@ -77,109 +94,115 @@
                 width="370"
                 height="294"
               />
-              <h2 lang="en">Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
+              <h2 class="examples-title" lang="en">
+                Постер New Orlean vs Golden Star
+              </h2>
+              <p class="directions-text">Дизайн</p>
             </a>
           </li>
 
           <!--картинка ресторан-->
-          <li>
-            <a href="#" target="_blank" >
-            <img
-              lang="en"
-              src="./img/portfolio/seafood-restaurant.jpg"
-              alt="картинка бренда ресторанна Seafood"
-              width="370"
-              height="294"
-            />
-            <h2 lang="en">Ресторан Seafood</h2>
-            <p>Приложение</p>
+          <li class="examples-list-item">
+            <a class="examples-image" href="#" target="_blank">
+              <img
+                lang="en"
+                src="./img/portfolio/seafood-restaurant.jpg"
+                alt="картинка бренда ресторанна Seafood"
+                width="370"
+                height="294"
+              />
+              <h2 class="examples-title" lang="en">Ресторан Seafood</h2>
+              <p class="directions-text">Приложение</p>
             </a>
           </li>
 
           <!--картинка наушники-->
-          <li>
-            <a href="#" target="blank">
-            <img
-              src="./img/portfolio/headphone.jpg"
-              alt="наушники"
-              width="370"
-              height="294"
-            />
-            <h2 lang="en">Проект Prime</h2>
-            <p>Маркетинг</p>
+          <li class="examples-list-item">
+            <a class="examples-image" href="#" target="blank">
+              <img
+                src="./img/portfolio/headphone.jpg"
+                alt="наушники"
+                width="370"
+                height="294"
+              />
+              <h2 class="examples-title" lang="en">Проект Prime</h2>
+              <p class="directions-text">Маркетинг</p>
             </a>
           </li>
 
           <!--картинка коробки-->
-          <li>
-            <a href="#" target="blank"></a>
-            <img
-              src="./img/portfolio/boxes.jpg"
-              alt="небольшие картонные коробочки разных размеров и оформления"
-              width="370"
-              height="294"
-            />
-            <h2 lang="en">Проект Boxes</h2>
-            <p>Приложение</p>
+          <li class="examples-list-item">
+            <a class="examples-image" href="#" target="blank">
+              <img
+                src="./img/portfolio/boxes.jpg"
+                alt="небольшие картонные коробочки разных размеров и оформления"
+                width="370"
+                height="294"
+              />
+              <h2 class="examples-title" lang="en">Проект Boxes</h2>
+              <p class="directions-text">Приложение</p>
             </a>
           </li>
 
           <!--картинка с монитором-->
-          <li>
-            <a href="#" target="blank">
-            <img lang="en"
-              src="./img/portfolio/komp.jpg"
-              alt="компьютер с информацтей о компании Inspiration has no Borders"
-              width="370"
-              height="294"
-            />
-            <h2 lang="en">Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+          <li class="examples-list-item">
+            <a class="examples-image" href="#" target="blank">
+              <img
+                lang="en"
+                src="./img/portfolio/komp.jpg"
+                alt="компьютер с информацтей о компании Inspiration has no Borders"
+                width="370"
+                height="294"
+              />
+              <h2 class="examples-title" lang="en">
+                Inspiration has no Borders
+              </h2>
+              <p class="directions-text">Веб-сайт</p>
             </a>
           </li>
 
           <!--женский журнал-->
-          <li>
-            <a href="#" target="blank">
-            <img
-              src="./img/portfolio/woman-magazine.jpg"
-              alt="женский журнал"
-              width="370"
-              height="294"
-            />
-            <h2 lang="en">Издание Limited Edition</h2>
-            <p>Дизайн</p>
+          <li class="examples-list-item">
+            <a class="examples-image" href="#" target="blank">
+              <img
+                src="./img/portfolio/woman-magazine.jpg"
+                alt="женский журнал"
+                width="370"
+                height="294"
+              />
+              <h2 class="examples-title" lang="en">Издание Limited Edition</h2>
+              <p class="directions-text">Дизайн</p>
             </a>
           </li>
 
           <!--проэкт лэб-->
-          <li>
-            <a href="#" target="blank">
-            <img
-              src="./img/portfolio/lab.jpg"
-              alt="проэкт Лэб"
-              width="370"
-              height="294"
-            />
-            <h2 lang="en">Проект LAB</h2>
-            <p>Маркетинг</p>
+          <li class="examples-list-item">
+            <a class="examples-image" href="#" target="blank">
+              <img
+                src="./img/portfolio/lab.jpg"
+                alt="проэкт Лэб"
+                width="370"
+                height="294"
+              />
+              <h2 class="examples-title" lang="en">Проект LAB</h2>
+              <p class="directions-text">Маркетинг</p>
             </a>
           </li>
 
           <!--ноутбук-->
-          <li>
-            <a href="#" target="blank">
-            <img lang="en"
-              src="./img/portfolio/growing-business.jpg"
-              alt="ноутбук на экране которого название компании growing-business"
-              width="370"
-              height="294"
-            />
-            <h2 lang="en">Growing Business</h2>
-            <p>Приложение</p>
+          <li class="examples-list-item">
+            <a class="examples-image" href="#" target="blank">
+              <img
+                lang="en"
+                src="./img/portfolio/growing-business.jpg"
+                alt="ноутбук на экране которого название компании growing-business"
+                width="370"
+                height="294"
+              />
+              <h2 class="examples-title" lang="en">Growing Business</h2>
+              <p class="directions-text">Приложение</p>
+            </a>
           </li>
-          </a>
         </ul>
       </section>
     </main>
@@ -193,10 +216,14 @@
               <p class="adress-text">г. Киев, пр-т Леси Украинки, 26</p>
             </li>
             <li class="adress-list-item">
-              <a class="navigation-link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="navigation-link-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
             <li class="adress-list-item">
-              <a class="navigation-link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="navigation-link-tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
         </address>
@@ -206,16 +233,36 @@
         <b class="join-text">присоединяйтесь</b>
         <ul class="join-list">
           <li class="join-list=item">
-            <a class="sosial-link" href="" target="blank" aria-label="иконка инстаграмма"></a>
+            <a
+              class="sosial-link"
+              href=""
+              target="blank"
+              aria-label="иконка инстаграмма"
+            ></a>
           </li>
           <li class="join-list=item">
-            <a class="sosial-link" href="" target="blank" aria-label="иконка твитера"></a>
+            <a
+              class="sosial-link"
+              href=""
+              target="blank"
+              aria-label="иконка твитера"
+            ></a>
           </li>
           <li class="join-list=item">
-            <a class="sosial-link" href="" target="blank" aria-label="иконка фейсбука"></a>
+            <a
+              class="sosial-link"
+              href=""
+              target="blank"
+              aria-label="иконка фейсбука"
+            ></a>
           </li>
           <li class="join-list=item">
-            <a class="sosial-link" href="" target="blank" aria-label="иконка линкедина"></a>
+            <a
+              class="sosial-link"
+              href=""
+              target="blank"
+              aria-label="иконка линкедина"
+            ></a>
           </li>
         </ul>
       </div>
