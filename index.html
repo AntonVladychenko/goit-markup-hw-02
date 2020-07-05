@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./css/normalaize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <nav class="navigation">
-        <a class="logo" href="./index.html"> <span>Web</span>Studio</a>
+        <a class="link-logo" href="./index.html"> <span>Web</span>Studio</a>
         <ul class="navigation-list">
           <li class="navigation-list-item">
             <a class="navigation-list-link" href="./index.html" target="blank"
@@ -35,13 +35,13 @@
         </ul>
       </nav>
 
-      <ul class="navigation-contacts">
-        <li class="navigation-contacts-list">
+      <ul class="navigation-contacts-list">
+        <li class="navigation-contacts-item">
           <a class="navigation-link-tel" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li class="navigation-contacts-list">
+        <li class="navigation-contacts-item">
           <a class="navigation-link-mail" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
@@ -49,41 +49,41 @@
       </ul>
     </header>
 
-    <main>
+    <main class="main-heroe">
       <!--блок герой-->
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button>Заказать услугу</button>
+      <section class="section-heroe">
+        <h1 class="title-heroe">Эффективные решения для вашего бизнеса</h1>
+        <button class="btn-heroe">Заказать услугу</button>
       </section>
 
       <!-- о нас, потом спрятать это заголовок-в макете его нет-->
-      <section>
-        <h2 hidden>О нас</h2>
-        <ul>
-          <li>
-            <h3>Внимание к деталям</h3>
-            <p>
+      <section class="section-about-us">
+        <h2 class="about-us-title" hidden>О нас</h2>
+        <ul class="about-us-list">
+          <li class="about-us-item">
+            <h3 class="about-us-title">Внимание к деталям</h3>
+            <p class="about-us-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
-            <h3>Пунктуальность</h3>
-            <p>
+          <li class="about-us-item">
+            <h3 class="about-us-title">Пунктуальность</h3>
+            <p class="about-us-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
-            <h3>Планирование</h3>
-            <p>
+          <li class="about-us-item">
+            <h3 class="about-us-title">Планирование</h3>
+            <p class="about-us-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
-            <h3>Современные технологии</h3>
-            <p>
+          <li class="about-us-item">
+            <h3 class="about-us-title">Современные технологии</h3>
+            <p class="about-us-text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -91,206 +91,354 @@
         </ul>
       </section>
       <!--Чем мы занимаемся-->
-      <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
-          <li>
+      <section class="section-whywedoing">
+        <h2 class="whywedoing-title">Чем мы занимаемся</h2>
+        <ul class="whywedoing-list">
+          <li class="whywedoing-list-item">
             <img
+              class="whywedoing-image"
               src="./img/nout.jpg"
               alt="человек работает за ноутбуком"
               width="370"
               height="294"
             />
-            <p>Десктопные приложения</p>
+            <p class="whywedoing-text">Десктопные приложения</p>
           </li>
 
-          <li>
+          <li class="whywedoing-list-item">
             <img
+              class="whywedoing-image"
               src="./img/phone.jpg"
               alt="мобильный телефон"
               width="370"
               height="294"
             />
-            <p>Мобильные приложения</p>
+            <p class="whywedoing-text">Мобильные приложения</p>
           </li>
-          <li>
+          <li class="whywedoing-list-item">
             <img
+              class="whywedoing-image"
               src="./img/komp.jpg"
               alt="включенный монитор с текстом"
               width="370"
               height="294"
             />
-            <p>Дизайнерские решения</p>
+            <p class="whywedoing-text">Дизайнерские решения</p>
           </li>
         </ul>
       </section>
+
       <!--Наша команда-->
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
-          <li>
+      <section class="section-us-team">
+        <h2 class="us-team-title">Наша команда</h2>
+        <!-- Николай -->
+        <ul class="us-team-list">
+          <li class="us-team-list-item">
             <img
+              class="us-team-photo"
               src="./img/nikolay.jpg"
               alt="на фото Николай Кучеренко разработчик продуктов"
               width="2"
               height="2"
             />
-            <h3>Николай Кучеренко</h3>
-            <p lang="en">Product Designer</p>
-            <ul>
-              <li>
-                <a href="" target="blank" aria-label="иконка инстаграмма"></a>
+            <h3 class="subtitle-surname">Николай Кучеренко</h3>
+            <p class="us-team-text" lang="en">Product Designer</p>
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка инстаграмма"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка твитера"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка твитера"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка фейсбука"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка фейсбука"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка линкедина"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка линкедина"
+                ></a>
               </li>
             </ul>
           </li>
-          <li>
+
+          <!-- Ольга -->
+          <li class="us-team-list-item">
             <img
+              class="us-team-photo"
               src="./img/olga.jpg"
               alt="на фото Ольга Иванова фронтенд разработчик"
               width="2"
               height="2"
             />
-            <h3>Ольга Иванова</h3>
-            <p lang="en">Frontend Developer</p>
-            <ul>
-              <li>
-                <a href="" target="blank" aria-label="иконка инстаграмма"></a>
+            <h3 class="subtitle-surname">Ольга Иванова</h3>
+            <p class="us-team-text" lang="en">Frontend Developer</p>
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка инстаграмма"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка твитера"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка твитера"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка фейсбука"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка фейсбука"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка линкедина"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка линкедина"
+                ></a>
               </li>
             </ul>
           </li>
-          <li>
+
+          <!-- Андрей -->
+          <li class="us-team-list-item">
             <img
+              class="us-team-photo"
               src="./img/andrey.jpg"
               alt="на фото Андрей Шевченко маркетолог"
               width="270"
               height="260"
             />
-            <h3>Андрей Шевченко</h3>
-            <p lang="en">Marketing</p>
-            <ul>
-              <li>
-                <a href="" target="blank" aria-label="иконка инстаграмма"></a>
+            <h3 class="subtitle-surname">Андрей Шевченко</h3>
+            <p class="us-team-text" lang="en">Marketing</p>
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка инстаграмма"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка твитера"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка твитера"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка фейсбука"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка фейсбука"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка линкедина"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка линкедина"
+                ></a>
               </li>
             </ul>
           </li>
-          <li>
+          <!-- Иван -->
+          <li class="us-team-list-item">
             <img
+              class="us-team-photo"
               src="./img/ivan.jpg"
               alt="на фото Иван Николаев юа дизайнер"
               width="270"
               height="260"
             />
-            <h3>Иван Николаев</h3>
-            <p lang="en">UI Designer</p>
-            <ul>
-              <li>
-                <a href="" target="blank" aria-label="иконка инстаграмма"></a>
+            <h3 class="subtitle-surname">Иван Николаев</h3>
+            <p class="us-team-text" lang="en">UI Designer</p>
+            <ul class="social-list">
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка инстаграмма"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка твитера"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка твитера"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка фейсбука"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка фейсбука"
+                ></a>
               </li>
-              <li>
-                <a href="" target="blank" aria-label="иконка линкедина"></a>
+              <li class="social-list-item">
+                <a
+                  class="sosial-link"
+                  href=""
+                  target="blank"
+                  aria-label="иконка линкедина"
+                ></a>
               </li>
             </ul>
           </li>
         </ul>
       </section>
       <!--постоянные клиенты-->
-      <section>
-        <h2>Постоянные клиенты</h2>
-        <ul>
-          <li>
-            <a href="" target="blank"
-              ><img lang="en" src="./img/logo-1.svg" alt="ya and Co"
+      <section class="section-clients">
+        <h2 class="clients-title">Постоянные клиенты</h2>
+        <ul class="clients-list">
+          <li class="clients-list-item">
+            <a class="clients-link" href="" target="blank"
+              ><img
+                class="clients-picture"
+                lang="en"
+                src="./img/logo-1.svg"
+                alt="ya and Co"
             /></a>
           </li>
-          <li>
-            <a href="" target="blank"
-              ><img lang="en" src="./img/logo-2.svg" alt="Company Taglain Here"
+          <li class="clients-list-item">
+            <a class="clients-link" href="" target="blank"
+              ><img
+                class="clients-picture"
+                lang="en"
+                src="./img/logo-2.svg"
+                alt="Company Taglain Here"
             /></a>
           </li>
-          <li>
-            <a href="" target="blank"
-              ><img lang="en" src="./img/logo-3.svg" alt="Company"
+          <li class="clients-list-item">
+            <a class="clients-link" href="" target="blank"
+              ><img
+                class="clients-picture"
+                lang="en"
+                src="./img/logo-3.svg"
+                alt="Company"
             /></a>
           </li>
-          <li>
-            <a href="" target="blank"
-              ><img lang="en" src="./img/log-4.svg" alt="Foster Peters"
+          <li class="clients-list-item">
+            <a class="clients-link" href="" target="blank"
+              ><img
+                class="clients-picture"
+                lang="en"
+                src="./img/log-4.svg"
+                alt="Foster Peters"
             /></a>
           </li>
-          <li>
-            <a href="" target="blank"
-              ><img lang="en" src="./img/logo-5.svg" alt="Brand"
+          <li class="clients-list-item">
+            <a class="clients-link" href="" target="blank"
+              ><img
+                class="clients-picture"
+                lang="en"
+                src="./img/logo-5.svg"
+                alt="Brand"
             /></a>
           </li>
-          <li>
-            <a href="" target="blank"
-              ><img lang="en" src="./img/logo-6.svg" alt="Compane Tag Lain"
+          <li class="clients-list-item">
+            <a class="clients-link" href="" target="blank"
+              ><img
+                class="clients-picture"
+                lang="en"
+                src="./img/logo-6.svg"
+                alt="Compane Tag Lain"
             /></a>
           </li>
         </ul>
       </section>
     </main>
     <!--Подвал:адресс-->
-    <footer>
-      <div>
-        <a href="#"> <span>Web</span>Studio</a>
-        <address>
-          <ul>
-            <li>
-              <p>г. Киев, пр-т Леси Украинки, 26</p>
+    <footer class="footer">
+      <div class="block-adress">
+        <a class="link-logo" href="#"> <span>Web</span>Studio</a>
+        <address class="adress">
+          <ul class="adress-list">
+            <li class="adress-list-item">
+              <p class="adress-text">г. Киев, пр-т Леси Украинки, 26</p>
             </li>
-            <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="adress-list-item">
+              <a class="navigation-link-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
-            <li>
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="adress-list-item">
+              <a class="navigation-link-tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
         </address>
       </div>
       <!--Подвал социальные сети-->
-      <div>
-        <b>присоединяйтесь</b>
-        <ul>
-          <li>
-            <a href="" target="blank" aria-label="иконка инстаграмма"></a>
+      <div class="join">
+        <b class="join-text">присоединяйтесь</b>
+        <ul class="join-list">
+          <li class="join-list=item">
+            <a
+              class="sosial-link"
+              href=""
+              target="blank"
+              aria-label="иконка инстаграмма"
+            ></a>
           </li>
-          <li><a href="" target="blank" aria-label="иконка твитера"></a></li>
-          <li><a href="" target="blank" aria-label="иконка фейсбука"></a></li>
-          <li><a href="" target="blank" aria-label="иконка линкедина"></a></li>
+          <li class="join-list=item">
+            <a
+              class="sosial-link"
+              href=""
+              target="blank"
+              aria-label="иконка твитера"
+            ></a>
+          </li>
+          <li class="join-list=item">
+            <a
+              class="sosial-link"
+              href=""
+              target="blank"
+              aria-label="иконка фейсбука"
+            ></a>
+          </li>
+          <li class="join-list=item">
+            <a
+              class="sosial-link"
+              href=""
+              target="blank"
+              aria-label="иконка линкедина"
+            ></a>
+          </li>
         </ul>
       </div>
     </footer>
