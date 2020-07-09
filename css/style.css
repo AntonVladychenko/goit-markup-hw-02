@@ -14,6 +14,7 @@ body {
   color: var(--title-grey-color);
   font-size: 14px;
   font-style: 400;
+  letter-spacing: 0.03em;
 }
 /* снимает все подчеркивания у ссылок */
 .Link {
@@ -50,17 +51,17 @@ span {
 /* стилизация почты и телефона */
 .contacts-link {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .contacts-link:hover,
 .navigation-link:hover,
 .contacts-link:focus,
-.navigation-link:focus {
+.navigation-link:focus,
+.clients-picture:hover,
+.clients-picture:focus {
   color: var(--accent-color);
 }
 /* стилизация заголовка h1 */
@@ -84,13 +85,66 @@ span {
   color: var(--title-white-color);
 }
 .btn-heroe:hover,
-.btn-heroe:focus{var(--button-hover-color);
+.btn-heroe:focus {
+  color: var (--button-hover-color);
 }
-/* стилизация общая заголовков */
- .caption { 
-font-weight: 700;
-font-size: 36px;
-line-height: 1.67
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;}
+/* стилизация общая заголовков (чем занимаеся,наша команда, постоянный клиенты)*/
+.caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  color: #212121;
+}
+/* о нас заголовки 3 */
+.aboutus-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #212121;
+}
+/* о нас абзацы */
+.aboutus-text {
+  font-weight: 400;
+  line-height: 1.71;
+}
+/*  чем занимаеся абзацы*/
+.whywedoing-text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* color: #ffffff; !!!! потом снять когда будет темный фон!!!!*/
+}
+/* команда-фамилии */
+.subtitle-surname,
+.usteam-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+
+  color: #212121;
+}
+/*команда-профессии */
+.usteam-text {
+  font-weight: 400;
+  color: #757575;
+}
+
+/* Подвал-адресс */
+.adress-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* color: #ffffff; !!!снять потом когда будет темный фон!!!*/
+}
+
+/* стилизация двух тегов b(присоединяйся и подписаться на пассылку) */
+.action {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  /* color: #FFFFFF; !!!потом снять когда будет темный фон!!!!!!!!!!!!!!!*/
+}
