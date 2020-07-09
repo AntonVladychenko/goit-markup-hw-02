@@ -9,22 +9,24 @@
 }
 
 body {
-  font-family: /*"Roboto", sans-serif;*/ var(--main-font);
-  background-color:/* #ffffff;*/ var(--title-white-color);
-  color:/*  #757575;*/ var(--title-grey-color);
+  font-family: var(--main-font);
+  background-color: var(--title-white-color);
+  color: var(--title-grey-color);
   font-size: 14px;
+  font-style: 400;
 }
-a {
+/* снимает все подчеркивания у ссылок */
+.Link {
   text-decoration: none;
 }
-ul {
+/* снимает маркеры у ul */
+.marker {
   list-style: none;
 }
-span {
-  color: var(--accent-color);
-}
+
 /* шапка */
-.link-logo {
+.link-logo,
+span {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -32,91 +34,21 @@ span {
   letter-spacing: 0.03em;
   color: #000000;
 }
-.navigation-list-link {
+span {
+  color: var(--accent-color);
+}
+/* стилизация студия-портфолио-контакты */
+.navigation-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-dark-color);
 }
-
-/* .link-tel {
-  font-weight: 500px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(-title-grey-color);
-} */
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.navigation-contacts-item:hover,
-.navigation-contacts-item:focus {
+.navigation-link.current {
   color: var(--accent-color);
 }
-/* блок герой */
-
-.title-heroe {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  /* color: #ffffff;   потом снять когда будет темный фон*/
-}
-
-/* кнопка */
-.btn-heroe {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--title-white-color);
-  background-color: var(--accent-color);
-}
-.btn-heroe:hover,
-.btn-heroe:focus {
-  background-color: #188ce8;
-  color: var(--title-white-color);
-}
-.about-us-title,
-.whywedoing-title,
-.whywedoing-text {
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121; /*  ПОЧЕМУ ЕСЛИ ОСТАВИТЬ ВАР И УБРАТЬ ХЕГС ЦВЕТА, то ОНО ПРИНИМАЕТ ДРУГОЙ ЦВЕТ???? var(--title-dark-color); */
-}
-.about-us-text {
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575; /* var(-title-grey-color); */
-}
-/* чем мы занимаемся */
-.whywedoing-title,
-.us-team-title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-.whywedoing-text {
-  text-align: center;
-  /* color: var(--title-white-color);  сделать когда будет фон темным*/
-}
-
-/* наша команда блок */
-.us-team-title {
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--title-dark-color);
-}
-
-.subtitle-surname,
-.us-team-text {
+/* стилизация почты и телефона */
+.contacts-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -124,87 +56,41 @@ span {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.us-team-text {
-  font-weight: 400;
-  color: #757575;
+
+.contacts-link:hover,
+.navigation-link:hover,
+.contacts-link:focus,
+.navigation-link:focus {
+  color: var(--accent-color);
 }
-.clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+/* стилизация заголовка h1 */
+.section-heroe > .title-heroe {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-/* 
-подвал  */
-/* адресс */
-.adress-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  /* color: #FFFFFF;  потом снять когда фон поставлю*/
-}
-
-.adress-link-mail-tel {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  /* color: rgba(255, 255, 255, 0.6); потом снять когда будет темный фон*/
-}
-.adress-link-mail-tel:hover,
-.adress-link-mail-tel:focus {
-  color: #2196f3;
-}
-
-/* присоединяйтесь */
-.join-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-/* color: #FFFFFF; потом снять*/
-
-/* вторая страница портфолио */
-
-.portfolio-list {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-.examples-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  text-transform: uppercase;
+  /* color: var(--title-white-color); !!!!снять коментарий когда поставим темный фон!!!!*/
 }
 
-.directions-text {
-  font-weight: 400;
+/* стилизация кнопки */
+.btn-heroe {
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: #757575;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--title-white-color);
 }
-.portfolio-list:hover,
-.portfolio-list:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+.btn-heroe:hover,
+.btn-heroe:focus{var(--button-hover-color);
 }
-
-.examples-title:hover,
-.examples-title:focus,
-.directions-text:hover,
-.directions-text:focus {
-  color: #2196f3;
-}
+/* стилизация общая заголовков */
+ .caption { 
+font-weight: 700;
+font-size: 36px;
+line-height: 1.67
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;}
