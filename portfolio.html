@@ -14,37 +14,38 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <a class="link-logo" lang="en" href="./index.html">
+        <a class="link-logo link" lang="en" href="./index.html">
           <span>Web</span> Studio</a
         >
-        <ul class="navigation-list">
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="./index.html" target="blank"
+        <!--список студия-портфолио-контакты-->
+        <ul class="navigation marker">
+          <li class="navigation-item">
+            <a class="navigation-link link" href="./index.html" target="blank"
               >Студия</a
             >
           </li>
-          <li class="navigation-list-item">
+          <li class="navigation-item">
             <a
-              class="navigation-list-link"
+              class="navigation-link link"
               href="./portfolio.html"
               target="blank"
               >Портфолио</a
             >
           </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="#" target="blank">Контакты</a>
+          <li class="navigation-item">
+            <a class="navigation-link link" href="#" target="blank">Контакты</a>
           </li>
         </ul>
       </nav>
-
-      <ul class="adress-contacts-list">
-        <li class="adress-contacts-item">
-          <a class="adress-link-mail-tel" href="mailto:info@devstudio.com"
+      <!--contacts-->
+      <ul class="contacts marker">
+        <li class="">
+          <a class="contacts-link link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li class="adress-contacts-item">
-          <a class="adress-link-mail-tel" href="tel:+380961111111"
+        <li class="">
+          <a class="contacts-link link" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
         </li>
@@ -54,12 +55,22 @@
       <!--секция потфолио-->
       <section class="portfolio-section">
         <h1 class="portfolio-title" hidden>Портфолио</h1>
-        <ul class="portfolio-list">
-          <li class="">Все</li>
-          <li class="">Веб-сайты</li>
-          <li class="">Приложения</li>
-          <li class="">Дизайн</li>
-          <li class="">Маркетинг</li>
+        <ul class="portfolio-list marker">
+          <li class="item-portfolio">
+            <button class="btn-portfolio" type="button">Все</button>
+          </li>
+          <li class="">
+            <button class="btn-portfolio" type="button">Веб-сайты</button>
+          </li>
+          <li class="">
+            <button class="btn-portfolio" type="button">Приложения</button>
+          </li>
+          <li class="">
+            <button class="btn-portfolio" type="button">Дизайн</button>
+          </li>
+          <li class="">
+            <button class="btn-portfolio" type="button">Маркетинг</button>
+          </li>
         </ul>
         <!-- <div>
         <span><input tabindex="1" checked type="radio" name="portfolio" value="all">Все</span>
@@ -70,10 +81,10 @@
         </div> -->
 
         <!--картинка с текстом-->
-        <ul class="examples-list">
-          <li class="examples-list-item">
-            <a class="examples-image" href="#" target="blank">
-              <!-- <img src="" alt="" /> -->
+        <ul class="examples-list marker">
+          <li class="examples-item">
+            <a class="examples-image link" href="#" target="blank">
+              <img src="" alt="" />
               <p class="techochryak-text">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
@@ -85,8 +96,8 @@
           </li>
 
           <!--картинка баскетбол-->
-          <li class="examples-list-item">
-            <a class="examples-image" href="#" target="blank">
+          <li class="examples-item">
+            <a class="examples-image link" href="#" target="blank">
               <img
                 lang="en"
                 src="./img/portfolio/neworlean-goldenstar.jpg"
@@ -102,8 +113,8 @@
           </li>
 
           <!--картинка ресторан-->
-          <li class="examples-list-item">
-            <a class="examples-image" href="#" target="_blank">
+          <li class="examples-item">
+            <a class="examples-image link" href="#" target="_blank">
               <img
                 lang="en"
                 src="./img/portfolio/seafood-restaurant.jpg"
@@ -117,8 +128,8 @@
           </li>
 
           <!--картинка наушники-->
-          <li class="examples-list-item">
-            <a class="examples-image" href="#" target="blank">
+          <li class="examples-item">
+            <a class="examples-image link" href="#" target="blank">
               <img
                 src="./img/portfolio/headphone.jpg"
                 alt="наушники"
@@ -131,8 +142,8 @@
           </li>
 
           <!--картинка коробки-->
-          <li class="examples-list-item">
-            <a class="examples-image" href="#" target="blank">
+          <li class="examples-item">
+            <a class="examples-image link" href="#" target="blank">
               <img
                 src="./img/portfolio/boxes.jpg"
                 alt="небольшие картонные коробочки разных размеров и оформления"
@@ -145,8 +156,8 @@
           </li>
 
           <!--картинка с монитором-->
-          <li class="examples-list-item">
-            <a class="examples-image" href="#" target="blank">
+          <li class="examples-item">
+            <a class="examples-image link" href="#" target="blank">
               <img
                 lang="en"
                 src="./img/portfolio/komp.jpg"
@@ -162,22 +173,24 @@
           </li>
 
           <!--женский журнал-->
-          <li class="examples-list-item">
-            <a class="examples-image" href="#" target="blank">
+          <li class="examples-item">
+            <a class="examples-image link" href="#" target="blank">
               <img
                 src="./img/portfolio/woman-magazine.jpg"
                 alt="женский журнал"
                 width="370"
                 height="294"
               />
-              <h2 class="examples-title" lang="en">Издание Limited Edition</h2>
+              <h2 class="examples-title" lang="en">
+                Издание Limited Edition
+              </h2>
               <p class="directions-text">Дизайн</p>
             </a>
           </li>
 
           <!--проэкт лэб-->
-          <li class="examples-list-item">
-            <a class="examples-image" href="#" target="blank">
+          <li class="examples-item">
+            <a class="examples-image link" href="#" target="blank">
               <img
                 src="./img/portfolio/lab.jpg"
                 alt="проэкт Лэб"
@@ -190,8 +203,8 @@
           </li>
 
           <!--ноутбук-->
-          <li class="examples-list-item">
-            <a class="examples-image" href="#" target="blank">
+          <li class="examples-item">
+            <a class="examples-image link" href="#" target="blank">
               <img
                 lang="en"
                 src="./img/portfolio/growing-business.jpg"
@@ -209,28 +222,30 @@
     <!--Подвал:адресс-->
     <footer class="footer">
       <div class="block-adress">
-        <a class="link-logo" href="#"> <span>Web</span>Studio</a>
+        <a class="link-logo link" lang="en" href="./index.html">
+          <span>Web</span> Studio</a
+        >
         <address class="adress">
-          <ul class="adress-list">
+          <ul class="contacts marker">
             <li class="adress-list-item">
               <p class="adress-text">г. Киев, пр-т Леси Украинки, 26</p>
             </li>
-            <li class="adress-list-item">
-              <a class="navigation-link-mail" href="mailto:info@devstudio.com"
+            <li class="">
+              <a class="contacts-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="adress-list-item">
-              <a class="navigation-link-tel" href="tel:+380961111111"
+            <li class="">
+              <a class="contacts-link link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
           </ul>
         </address>
       </div>
-      <!--Подвал социальные сети-->
+      <!--Подвал  Присоединяйтесь на социальные сети-->
       <div class="join">
-        <b class="join-text">присоединяйтесь</b>
+        <b class="action oin-text">присоединяйтесь</b>
         <ul class="join-list">
           <li class="join-list=item">
             <a
@@ -265,6 +280,10 @@
             ></a>
           </li>
         </ul>
+      </div>
+      <!--Подпишитесь на рассылку-->
+      <div>
+        <b class="action subscribeletters">Подпишитесь на рассылку</b>
       </div>
     </footer>
   </body>

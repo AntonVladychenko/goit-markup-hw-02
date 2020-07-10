@@ -17,7 +17,7 @@ body {
   letter-spacing: 0.03em;
 }
 /* снимает все подчеркивания у ссылок */
-.Link {
+.link {
   text-decoration: none;
 }
 /* снимает маркеры у ul */
@@ -77,6 +77,7 @@ span {
 
 /* стилизация кнопки */
 .btn-heroe {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -86,7 +87,8 @@ span {
 }
 .btn-heroe:hover,
 .btn-heroe:focus {
-  color: var (--button-hover-color);
+  color: var(--title-white-color);
+  background-color: var(--button-hover-color);
 }
 /* стилизация общая заголовков (чем занимаеся,наша команда, постоянный клиенты)*/
 .caption {
@@ -94,14 +96,14 @@ span {
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
-  color: #212121;
+  color: var(--title-dark-color);
 }
 /* о нас заголовки 3 */
 .aboutus-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--title-dark-color);
 }
 /* о нас абзацы */
 .aboutus-text {
@@ -125,12 +127,13 @@ span {
   line-height: 1.18;
   text-align: center;
 
-  color: #212121;
+  color: var(--title-dark-color);
 }
+
 /*команда-профессии */
 .usteam-text {
   font-weight: 400;
-  color: #757575;
+  color: var(--title-grey-color);
 }
 
 /* Подвал-адресс */
@@ -147,4 +150,45 @@ span {
   line-height: 1.14;
   text-transform: uppercase;
   /* color: #FFFFFF; !!!потом снять когда будет темный фон!!!!!!!!!!!!!!!*/
+}
+
+/* стилизация второй страницы */
+/* стилизация заголовков с названием коммпаний */
+.examples-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-dark-color);
+}
+/* стилизация абзацов с указанием вида продукции */
+.directions-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--title-grey-color);
+}
+/* технохряк абхац */
+.techochryak-text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--title-dark-color);
+}
+
+/* стилизация кнопопок портфолио */
+.btn-portfolio {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  color: var(--title-dark-color);
+}
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  color: var(--title-white-color);
+  background-color: var(--accent-color);
 }
