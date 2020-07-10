@@ -99,7 +99,8 @@ span {
   color: var(--title-dark-color);
 }
 /* о нас заголовки 3 */
-.aboutus-title {
+.aboutus-title,
+.whywedoing-text {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -107,16 +108,11 @@ span {
 }
 /* о нас абзацы */
 .aboutus-text {
-  font-weight: 400;
   line-height: 1.71;
 }
 /*  чем занимаеся абзацы*/
 .whywedoing-text {
-  font-weight: 700;
-  line-height: 1.14;
   text-align: center;
-  text-transform: uppercase;
-
   /* color: #ffffff; !!!! потом снять когда будет темный фон!!!!*/
 }
 /* команда-фамилии */
